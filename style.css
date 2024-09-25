@@ -1,0 +1,168 @@
+body{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr)  repeat(3, 80px);
+    grid-template-rows:  repeat(12, 1fr);
+    height: 96vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #f1f1f1;
+    column-gap: 40px;
+    row-gap:20px;
+}
+ 
+.navbar{
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 1 / 13;
+    background-color: #FDCB4D;
+    border-radius: 15px;
+    align-items: center;
+    flex-flow: column;
+    line-height: 40px;
+}
+ 
+.logo{
+    background-color: #E0A819;
+    border-radius: 40px;
+    width: 130px;
+    height: 130px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+ 
+.logo img{
+    padding: 25px;
+    width: 80px;
+    opacity: 0.9;
+}
+ 
+.navegacao div{
+    color: rgba(255, 255, 255, 0.637);
+}
+
+.navegacao div img {
+    padding-right: 10px;
+}
+ 
+.navegacao div:nth-child(1), .navegacao div:nth-child(9){
+    color: white;
+}
+ 
+.logout{
+    padding-top: 19px;
+}
+ 
+header {
+    display: flex;
+    background-color: #fff;
+    border-radius: 25px;
+    justify-content: right;
+    grid-column: 2 / span 2;
+    height: 50px;
+    color: #757575;
+    align-items: center;
+    padding-right: 30px;
+    font-size: 16px;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.banner{
+    display:grid;
+    position: relative;
+    background: linear-gradient(99deg, #ffd7719c 53.12%, #fbefd0c2 155.43%);
+    grid-row: 2 / 6;
+    grid-column: 2 / 8;
+    border-radius: 15px;
+    margin-right: 30px;
+    padding: 15px;
+    padding-left: 30px;
+    box-shadow: 5.211px 5.211px 31.266px 5.211px rgba(0, 0, 0, 0.08);
+}
+ 
+.banner p{
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
+}
+
+.banner #p1{
+    font-size:14px;
+    font-weight: lighter;
+    padding: 0;
+}
+ 
+.john{
+    position: absolute;
+    width: 298px;
+    right: 50px;
+    top: -6px
+}
+
+.perfil {
+    grid-column: 5  /8;
+    position: relative;
+}
+
+.perfil div {
+    display: flex;
+
+}
+
+#fotoperfil {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: #E0A819 3px solid;
+    border-radius: 30px;
+}
+
+#h2 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#h2 span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#sininho {
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    width: 150px;
+    height: 80px;
+}
+
+.financas{
+    position: relative;
+   
+}
+ 
+.financas h1{
+   font-size: 20px;
+    margin: 0;
+}
+ 
+#um{
+    grid-row: 7 / 11 ;
+    grid-column: 2 / 3;
+    background-color: white;
+    border-radius: 15px;
+
+}
+ 
+#dois{
+    grid-row: 7 / 11 ;
+    grid-column: 3 / 4;
+    background-color: white;
+    border-radius: 15px;
+}
+ 
+#tres{
+    grid-row: 7 / 11 ;
+    grid-column: 4 / 5;
+    background-color: white;
+    border-radius: 15px;
+}
